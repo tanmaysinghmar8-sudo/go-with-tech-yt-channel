@@ -1,0 +1,532 @@
+body {
+  margin: 0;
+  /* Applying a similar geometric font */
+  font-family: 'Michroma', sans-serif; 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Pushes items to opposite sides */
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee; /* Light grid-like feel */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  /* This adds the brackets seen in your image */
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff6600; /* Subtle orange accent like the logo */
+}
+/*body{
+    margin:0;
+    background-color:#f5f5f5;
+
+    background-image:
+    linear-gradient(#e0e0e0 1px, transparent 1px),
+    linear-gradient(90deg, #e0e0e0 1px, transparent 1px);
+
+    background-size: 60px 60px;
+}*/
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  /* The background color (white) */
+  background-color: #ffffff;
+  
+  /* Creating the grid lines */
+  background-image: 
+    linear-gradient(to right, #f0f0f0 1px, transparent 1px),
+    linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+  
+  /* Adjust '50px' to make the grid squares larger or smaller */
+  background-size: 50px 50px;
+}
+/* Container for the whole hero section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  padding-left: 10%; /* Matches the left-side margin in your image */
+}
+
+/* Positioning the image to the right */
+.image-container {
+  position: absolute;
+  right: 5%; /* This pushes it to the right */
+  top: 50%;   /* This centers it vertically */
+  transform: translateY(-50%);
+  z-index: 1; /* This ensures it stays on top of the grid */
+}
+
+.hero-image {
+  width: 500px; /* This controls how big the image is */
+  height: auto;
+  border-radius: 10px; /* Optional: rounds the corners slightly */
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1); /* Adds a soft tech shadow */
+}
+
+/* Styling the "refuse the default" text */
+.main-title {
+  font-size: 120px;
+  line-height: 0.85;
+  font-weight: 900;
+  text-transform: lowercase;
+  margin-top: 20px;
+  letter-spacing: -5px;
+}
+
+.highlight {
+  background-color: #ff6600; /* The Armor orange */
+  color: white;
+  padding: 2px 8px;
+  display: inline-block;
+  font-size: 18px;
+}
+/* Container for the second page */
+.arsenal-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 100px 5%;
+  min-height: 100vh; /* Makes it feel like a full second page */
+}
+
+/* The Blue Product Card on the left */
+.card-outline {
+  width: 500px;
+  height: 400px;
+  border: 2px solid #8eb9d8; /* Light blue border */
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.card-image {
+  width: 80%;
+  height: auto;
+}
+
+/* Text styling on the right */
+.product-info {
+  max-width: 400px;
+}
+
+.section-label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.section-title {
+  font-size: 48px;
+  margin: 10px 0 60px 0;
+}
+
+.section-title span {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+.product-name {
+  color: #ff6600; /* Armor Orange */
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Black 'View Product' Button */
+.view-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 15px 40px;
+  border-radius: 50px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.about-section {
+  padding: 60px 5%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blue-box {
+  background-color: #8eb9d8; /* The light blue from the image */
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 40px; /* Large rounded corners */
+  padding: 80px;
+  display: flex;
+  position: relative;
+  color: white; /* All text inside is white */
+}
+
+.about-content {
+  flex: 1;
+  z-index: 2;
+}
+
+.about-title {
+  font-size: 38px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.about-title u {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+
+.about-body p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  max-width: 500px;
+}
+
+.know-more {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 20px;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+}
+
+.about-footer {
+  margin-top: 100px;
+}
+
+.tagline {
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+/* Illustration on the right */
+.doodle-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.doodle-image {
+  width: 110%; /* Slightly larger to mimic the overflow look */
+  height: auto;
+  opacity: 0.9;
+}
+.join-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 5%;
+  min-height: 100vh;
+}
+
+/* Setup Card styling */
+.setup-card {
+  flex: 1.2;
+  margin-right: 50px;
+}
+
+.setup-image {
+  width: 100%;
+  border-radius: 40px; /* Matching the blue box corners */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* Signup Form styling */
+.signup-content {
+  flex: 0.8;
+}
+
+.signup-title {
+  font-size: 54px;
+  margin: 10px 0 30px 0;
+  font-weight: bold;
+}
+
+.signup-title u {
+  text-decoration-thickness: 3px;
+}
+
+.signup-desc {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+/* Making the Inputs "Proper" */
+.armor-input {
+  width: 100%;
+  background-color: #f5f5f5; /* Light grey like the image */
+  border: none;
+  border-radius: 50px; /* Fully rounded */
+  padding: 18px 25px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  outline: none; /* Removes the blue browser outline */
+  box-sizing: border-box; /* Ensures padding doesn't break width */
+}
+
+.armor-input::placeholder {
+  color: #bbb;
+}
+
+/* Checkbox styling */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0 40px 0;
+  color: #888;
+  font-size: 14px;
+}
+
+.checkbox-container input {
+  width: 18px;
+  height: 18px;
+  accent-color: #ff6600; /* Uses the armor orange for the checkmark */
+}
+
+/* The Black Button */
+.submit-btn {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  border-radius: 50px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  transform: scale(1.02); /* Slight pop effect on hover */
+}
+.armor-footer {
+  background-color: #000;
+  color: #fff;
+  padding: 80px 5% 40px 5%;
+  border-top-left-radius: 60px; /* The large rounded corner on the top left */
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+/* Branding Column */
+.footer-brand {
+  flex: 1.5;
+  max-width: 450px;
+}
+
+.footer-logo {
+  font-size: 42px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.brand-desc {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  color: #ddd;
+}
+
+.company-details p {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 5px;
+  line-height: 1.4;
+}
+
+/* Links Columns */
+.footer-links-group {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.link-column h4 {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.link-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link-column li {
+  margin-bottom: 12px;
+}
+
+.link-column a {
+  text-decoration: none;
+  color: #888;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.link-column a:hover {
+  color: #fff; /* Links turn white when you hover over them */
+}
+
+/* Responsive fix for smaller screens (like your Lenovo Tab) */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-links-group {
+    width: 100%;
+  }
+}
+.main-title{
+    text-transform: uppercase;
+}
+#subs{
+  text-size-adjust: 10px;
+}
+/* MOBILE RESPONSIVE DESIGN */
+@media (max-width: 900px){
+
+/* Navbar */
+.navbar{
+  padding:15px 20px;
+}
+
+.nav-links li{
+  margin-left:15px;
+}
+
+/* HERO SECTION */
+.hero{
+  flex-direction:column;
+  text-align:center;
+  height:auto;
+  padding:60px 20px;
+}
+
+.image-container{
+  position:static;
+  transform:none;
+  margin-top:30px;
+}
+
+.hero-image{
+  width:90%;
+}
+
+.main-title{
+  font-size:60px;
+  letter-spacing:-2px;
+}
+
+/* SECOND SECTION */
+.arsenal-section{
+  flex-direction:column;
+  text-align:center;
+  gap:40px;
+}
+
+.card-outline{
+  width:90%;
+  height:auto;
+  padding:30px;
+}
+
+/* ABOUT SECTION */
+.blue-box{
+  flex-direction:column;
+  padding:40px 25px;
+}
+
+.doodle-container{
+  justify-content:center;
+  margin-top:30px;
+}
+
+.doodle-image{
+  width:80%;
+}
+
+/* JOIN SECTION */
+.join-section{
+  flex-direction:column;
+}
+
+.setup-card{
+  margin-right:0;
+  margin-bottom:40px;
+}
+
+/* FOOTER */
+.footer-links-group{
+  flex-direction:column;
+}
+
+.link-column{
+  margin-bottom:25px;
+}
+
+.signup-title{
+  font-size:36px;
+}
+
+.about-title{
+  font-size:28px;
+}
+
+}
